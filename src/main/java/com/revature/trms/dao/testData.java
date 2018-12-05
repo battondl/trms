@@ -11,6 +11,7 @@ public class testData {
 		User user = data.isValidUsernameAndPassword("davidbatton", "qwerty");
 		
 		System.out.println(user);
+		
 
 	}
 
