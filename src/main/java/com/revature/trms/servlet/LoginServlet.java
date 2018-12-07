@@ -21,17 +21,17 @@ public class LoginServlet extends HttpServlet{
 		String username = req.getParameter("username");
 		String password = req.getParameter("password");
 		
-		User user = aServ.isValidUser(username, password);
+		User user = aServ.validateUser(username, password);
 		
 		if(user != null) {
 			HttpSession sess = req.getSession();
 			sess.setAttribute("user", user);
-			resp.getWriter().write("<h1>You have logged in successfully!");
+			resp.sendRedirect("main.html");
 			
 		}
 		
 		else {
-			resp.getWriter().write("<h1>You have logged in incorrectly!");
+			resp.sendRedirect("index.html");
 		}
 		
 	}

@@ -7,8 +7,8 @@ public class AuthService {
 	
 	EmployeeData data = new EmployeeData();
 	
-	public User isValidUser(String username, String password) {
-		return data.isValidUsernameAndPassword(username, password);
+	public User validateUser(String username, String password) {
+		return data.validateUser(username, password);
 	}
 
 }

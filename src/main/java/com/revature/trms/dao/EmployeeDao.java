@@ -4,5 +4,6 @@ import com.revature.trms.domain.User;
 
 public interface EmployeeDao {
 
-	public User isValidUsernameAndPassword(String username, String password);
+	public User validateUser(String username, String password);
+	
 }
