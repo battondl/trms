@@ -6,8 +6,15 @@ import java.sql.SQLException;
 import com.revature.trms.domain.TuitionForm;
 import com.revature.trms.utils.ConnectionFactory;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class TuitionFormData.
+ */
 public class TuitionFormData implements TuitionFormDAO{
 
+	/* (non-Javadoc)
+	 * @see com.revature.trms.dao.TuitionFormDAO#submitRequest(com.revature.trms.domain.TuitionForm)
+	 */
 	@Override
 	public void submitRequest(TuitionForm form) {
 		Connection conn = ConnectionFactory.getConnectionFactory().createConnection();

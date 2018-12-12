@@ -8,8 +8,15 @@ import java.sql.Statement;
 import com.revature.trms.domain.User;
 import com.revature.trms.utils.ConnectionFactory;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class GradingFormatData.
+ */
 public class GradingFormatData implements GradingFormatDAO{
 
+	/* (non-Javadoc)
+	 * @see com.revature.trms.dao.GradingFormatDAO#getGradingFormatId(java.lang.String)
+	 */
 	@Override
 	public int getGradingFormatId(String gradingFormat) {
 		Connection conn = ConnectionFactory.getConnectionFactory().createConnection();

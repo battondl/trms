@@ -7,8 +7,15 @@ import java.sql.Statement;
 
 import com.revature.trms.utils.ConnectionFactory;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class EventTypeData.
+ */
 public class EventTypeData implements EventTypeDAO{
 
+	/* (non-Javadoc)
+	 * @see com.revature.trms.dao.EventTypeDAO#getEventIdByName(java.lang.String)
+	 */
 	@Override
 	public int getEventIdByName(String eventName) {
 		Connection conn = ConnectionFactory.getConnectionFactory().createConnection();

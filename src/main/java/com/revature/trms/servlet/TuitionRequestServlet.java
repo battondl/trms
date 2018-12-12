@@ -1,3 +1,6 @@
+/*
+ * 
+ */
 package com.revature.trms.servlet;
 
 import java.io.IOException;
@@ -13,8 +16,15 @@ import com.revature.trms.domain.TuitionForm;
 import com.revature.trms.domain.User;
 import com.revature.trms.service.TuitionRequestService;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class TuitionRequestServlet.
+ */
 public class TuitionRequestServlet extends HttpServlet {
 	
+	/* (non-Javadoc)
+	 * @see javax.servlet.http.HttpServlet#doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+	 */
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
 					

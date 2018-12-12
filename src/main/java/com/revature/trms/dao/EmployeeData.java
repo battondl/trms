@@ -9,8 +9,15 @@ import java.sql.Statement;
 import com.revature.trms.domain.User;
 import com.revature.trms.utils.ConnectionFactory;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class EmployeeData.
+ */
 public class EmployeeData implements EmployeeDao {
 
+	/* (non-Javadoc)
+	 * @see com.revature.trms.dao.EmployeeDao#validateUser(java.lang.String, java.lang.String)
+	 */
 	@Override
 	public User validateUser(String username, String password) {
 		Connection conn = ConnectionFactory.getConnectionFactory().createConnection();
